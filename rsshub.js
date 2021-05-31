@@ -1,6 +1,7 @@
 const rsshubConfig = require("rsshub/lib/config");
 const request = require("supertest");
 let app;
+
 class ResponseError extends Error {
   constructor(response) {
     super(response.res.statusMessage);
@@ -15,7 +16,7 @@ const rsshub = {
     rsshubConfig.set(
       Object.assign(
         {
-          IS_PACKAGE: true,
+          IS_PACKAGE: true
         },
         conf
       )
@@ -33,7 +34,7 @@ const rsshub = {
     } else {
       return Promise.reject(new ResponseError(response));
     }
-  },
+  }
 };
 
 module.exports = rsshub;
