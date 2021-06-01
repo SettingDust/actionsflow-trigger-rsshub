@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/theowenyoung/actionsflow-trigger-rsshub.git"
+    "url": "git+https://github.com/SettingDust/actionsflow-trigger-rsshub.git"
   },
   "publishConfig": {
     "access": "public"

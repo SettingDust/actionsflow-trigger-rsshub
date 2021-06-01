@@ -22,13 +22,13 @@ const rsshub = {
         conf
       )
     );
-    app = require("rsshub/lib/app");
+    app = require("rsshub/lib/index");
     if (rsshubConfig.value.pixiv) {
       await refreshToken()
     }
   },
   get: async (url) => {
-    const response = await request(app.callback()).get(url);
+    const response = await request(app).get(url);
     if (response.status < 300) {
       if (response.body.error) {
         return Promise.reject(new Error(response.body.error.message));
