@@ -1,5 +1,6 @@
 const rsshubConfig = require("rsshub/lib/config");
 const request = require("supertest");
+const { refreshToken } = require("rsshub/lib/routes/pixiv/token");
 let app;
 
 class ResponseError extends Error {
@@ -12,7 +13,7 @@ class ResponseError extends Error {
 }
 
 const rsshub = {
-  init: (conf) => {
+  init: async (conf) => {
     rsshubConfig.set(
       Object.assign(
         {
@@ -22,6 +23,9 @@ const rsshub = {
       )
     );
     app = require("rsshub/lib/app");
+    if (rsshubConfig.value.pixiv) {
+      await refreshToken()
+    }
   },
   get: async (url) => {
     const response = await request(app.callback()).get(url);
