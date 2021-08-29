@@ -14,18 +14,12 @@ class ResponseError extends Error {
 const rsshub = {
   init: async (conf) => {
     rsshubConfig.set(
-      Object.assign(
-        {
-          IS_PACKAGE: true
-        },
-        conf
-      )
+      {
+        ...conf,
+        IS_PACKAGE: true
+      }
     );
     app = require("rsshub/lib/app");
-    if (rsshubConfig.value.pixiv) {
-      const { refreshToken } = require("rsshub/lib/routes/pixiv/token");
-      await refreshToken()
-    }
   },
   get: async (url) => {
     const response = await request(app.callback()).get(url);
