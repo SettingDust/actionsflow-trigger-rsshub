@@ -10,13 +10,13 @@ __metadata:
   resolution: "@actionsflow/trigger-rsshub@workspace:."
   dependencies:
     actionsflow-core: ^1.10.0
-    eslint: ^8.24.0
-    eslint-plugin-jest: ^27.0.4
-    jest: ^29.1.2
-    prettier: ^2.7.1
-    release-it: ^15.4.2
+    eslint: ^8.28.0
+    eslint-plugin-jest: ^27.1.6
+    jest: ^29.3.1
+    prettier: ^2.8.0
+    release-it: ^15.5.0
     rsshub: "https://github.com/DIYgod/RSSHub"
-    supertest: ^6.2.4
+    supertest: ^6.3.1
   languageName: unknown
   linkType: soft
 
@@ -4115,7 +4115,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:^27.0.4":
+"eslint-plugin-jest@npm:^27.1.6":
   version: 27.1.6
   resolution: "eslint-plugin-jest@npm:27.1.6"
   dependencies:
@@ -4177,7 +4177,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.24.0":
+"eslint@npm:^8.28.0":
   version: 8.28.0
   resolution: "eslint@npm:8.28.0"
   dependencies:
@@ -6827,7 +6827,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest@npm:^29.1.2":
+"jest@npm:^29.3.1":
   version: 29.3.1
   resolution: "jest@npm:29.3.1"
   dependencies:
@@ -8886,7 +8886,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.7.1":
+"prettier@npm:^2.8.0":
   version: 2.8.0
   resolution: "prettier@npm:2.8.0"
   bin:
@@ -9496,7 +9496,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"release-it@npm:^15.4.2":
+"release-it@npm:^15.5.0":
   version: 15.5.0
   resolution: "release-it@npm:15.5.0"
   dependencies:
@@ -10530,7 +10530,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"supertest@npm:^6.2.4":
+"supertest@npm:^6.3.1":
   version: 6.3.1
   resolution: "supertest@npm:6.3.1"
   dependencies:

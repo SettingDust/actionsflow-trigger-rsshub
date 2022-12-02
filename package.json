@@ -28,15 +28,15 @@
   },
   "devDependencies": {
     "actionsflow-core": "^1.10.0",
-    "eslint": "^8.24.0",
-    "eslint-plugin-jest": "^27.0.4",
-    "jest": "^29.1.2",
-    "prettier": "^2.7.1",
-    "release-it": "^15.4.2"
+    "eslint": "^8.28.0",
+    "eslint-plugin-jest": "^27.1.6",
+    "jest": "^29.3.1",
+    "prettier": "^2.8.0",
+    "release-it": "^15.5.0"
   },
   "dependencies": {
     "rsshub": "https://github.com/DIYgod/RSSHub",
-    "supertest": "^6.2.4"
+    "supertest": "^6.3.1"
   },
   "packageManager": "yarn@3.3.0"
 }

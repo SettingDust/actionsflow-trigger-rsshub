@@ -13,7 +13,7 @@ class ResponseError extends Error {
 
 const rsshub = {
   init: async (conf) => {
-    console.debug(conf)
+    console.debug("[trigger-rsshub:config]", conf);
     rsshubConfig.set(
       {
         ...conf,
