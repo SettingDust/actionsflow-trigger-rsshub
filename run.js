@@ -4,7 +4,7 @@ module.exports = async function ({ triggerOptions, rsshub, config }) {
   if (!options.path) {
     throw new Error("you must provide a path");
   }
-  let sources = [];
+  let sources;
   if (Array.isArray(options.path)) {
     sources = options.path;
   } else {

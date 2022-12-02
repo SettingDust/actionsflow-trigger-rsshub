@@ -35,7 +35,8 @@
     "release-it": "^15.4.2"
   },
   "dependencies": {
-    "rsshub": "^1.0.0",
+    "rsshub": "https://github.com/DIYgod/RSSHub",
     "supertest": "^6.2.4"
-  }
+  },
+  "packageManager": "yarn@3.3.0"
 }

@@ -7,12 +7,11 @@ module.exports = class Rsshub {
     this.helpers = helpers;
   }
   async run() {
-    const items = await run({
+    return await run({
       triggerOptions: this.options,
-      rsshub: rsshub,
-      config: config,
+      rsshub,
+      config,
     });
-    return items;
   }
   getItemKey(item) {
     // TODO adapt every cases
